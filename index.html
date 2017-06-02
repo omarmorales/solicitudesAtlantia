@@ -5,6 +5,8 @@
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<!-- Import Compiled and minified flag icon css -->
+	<link rel="stylesheet" href="bower_components/flag-icon-css/css/flag-icon.min.css">
 	<!-- Main Stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
@@ -30,6 +32,7 @@
       		</ul>
     	</div>
   	</nav>
+  	<!--  -->
 	<div class="row">
         <div class="col s12 m12">
 	        <div class="card">
@@ -65,19 +68,54 @@
 	<div class="row">
 		<div class="col s12 m3">
 			<div class="card">
-				<div class="card-image">
-					<img src="images/sample-1.jpg">
-					<span class="card-title">Card Title</span>
-					<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-				</div>
 				<div class="card-content">
-					<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+					<div class="row">
+						<div class="col s12">
+							<div class="progress">
+								<div class="determinate blue" style="width: 50%"></div>
+							</div>
+							<span class="new badge blue right" data-badge-caption="">Activo - 50%</span>
+							<br>
+							<span class="card-title center-align">Título de la solicitud en dos poderosas líneas</span>
+						</div>
+						<div class="col s12">
+							<ul class="tabs">
+								<li class="tab col s6"><a href="#test1">Solicitud</a></li>
+								<li class="tab col s6"><a href="#test2">Productos</a></li>
+							</ul>
+						</div>
+						<div id="test1" class="col s12">
+							<br>
+							<span class="flag-icon flag-icon-mx left"></span>
+							<p class="grey-text marginib">México</p>
+							<br>
+							<p>Atlantia Search</p>
+							<p>Juan José Mora Villanueva</p>
+							<p class="grey-text">Creado el Jun 01 - 04:30 p.m.</p>
+							<br>
+							<p>Presupuesto: $100,000.00 MXN</p>
+							<a class="waves-effect waves-light btn blue largeBtn marginib">Ver solicitud</a>
+						</div>
+						<div id="test2" class="col s12">
+							<ul>
+								<li>Producto 1</li>
+								<li>Producto 2</li>
+								<li>Producto 3</li>
+								<li>Producto 4</li>
+							</ul>
+						</div>
+					</div>
 				</div>
+		        <div class="card-action">
+		          	Asignado a <a href="#" class="blue-text">Omar Morales</a>
+		        </div>
 			</div>
 		</div>
 	</div>
 	<!-- Compiled and minified JQuery -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Compiled and minified AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 	<!-- Main JS -->
